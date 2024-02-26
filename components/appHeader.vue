@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-full bg-rose-gold flex h-2/3 xl:h-3/4 bg-cover" :style="{ backgroundImage: `url(${backgroundUrl})` }">
+    <div class="relative w-full bg-rose-gold flex h-3/4  bg-cover" :style="{ backgroundImage: `url(${backgroundUrl})` }">
         <div class=" bg-cover flex flex-col p-8 z-10">
 
             <div class="flex flex-col text-center">
@@ -24,7 +24,7 @@
                 </svg>
 
             </p>
-            <p class="text-sm md:text-xl text-white text-center font-moulpali "> <strong>នៅគេហដ្ឋានខាងស្រី</strong> <strong> ស្ថិតនៅភូមិក្រសាំងជ័យ ឃុំបារាយណ៍
+            <p class="text-sm md:text-xl text-white text-center font-moulpali px-4 "> <strong>នៅគេហដ្ឋានខាងស្រី</strong> <strong> ស្ថិតនៅភូមិក្រសាំងជ័យ ឃុំបារាយណ៍
                     ស្រុកបារាយណ៍
                     ខេត្តកំពង់ធំ
                     ។

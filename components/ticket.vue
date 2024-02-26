@@ -1,7 +1,7 @@
 <template>
-    <div class="relative w-full bg-rose-gold flex flex-col xl:h-3/4 bg-cover items-center py-8 h-screen">
-        <p class="text-2xl text-pink-500 font-moulpali ">សិរីសួស្តីមង្គលអាពាហ៍ពិពាហ៍</p>
-        <p class="text-2xl py-4  ">យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</p>
+    <div class="relative w-full bg-rose-gold flex flex-col bg-cover items-center py-8 h-screen">
+        <p class="text-2xl text-pink-500 font-moulpali text-center">សិរីសួស្តីមង្គលអាពាហ៍ពិពាហ៍</p>
+        <p class="text-2xl py-4 text-center ">យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</p>
         <p class="text-md   px-4 text-center text-gray-500">ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា និងប្រិយមិត្ត
             អញ្ជើញចូលរួមជាអធិបតី
             និងជាភ្ញៀវកិត្តិយស
@@ -12,12 +12,12 @@
             <div class="flex flex-col p-4">
                 
                 <div class="flex flex-row items-center">
-                    <p class="text-xl font-moulpali text-pink-500 pr-4">សេង ចាន់ធីតា</p>
-                    <img class="w-44 h-44 rounded-full" :src="hasband" alt="background">
-                </div>
-                <div class="flex flex-row mt-8 items-center">
+                    <p class="text-xl font-moulpali text-pink-500 pr-4 text-center">សេង ចាន់ធីតា</p>
                     <img class="w-44  rounded-full" :src="wire" alt="background">
-                    <p class="pl-4 text-xl font-moulpali text-pink-500 ">សិម ឆាយងួន</p>
+                </div>
+                <div class="flex flex-row mt-4 items-center">
+                    <img class="w-44 h-44 rounded-full" :src="hasband" alt="background">
+                    <p class="pl-4 text-xl font-moulpali text-pink-500 text-center">សិម ឆាយងួន</p>
                 </div>
 
             </div>
