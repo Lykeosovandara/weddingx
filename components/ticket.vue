@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-full bg-rose-gold flex flex-col bg-cover items-center py-8 h-screen">
+    <div class="relative w-full bg-rose-gold flex flex-col bg-cover items-center py-8  ">
         <p class="text-2xl text-pink-500 font-moulpali text-center">សិរីសួស្តីមង្គលអាពាហ៍ពិពាហ៍</p>
         <p class="text-2xl py-4 text-center ">យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</p>
         <p class="text-md   px-4 text-center text-gray-500">ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា និងប្រិយមិត្ត
@@ -18,7 +18,7 @@
                 
                 <div class="flex items-center justify-center"><img class="animate-bounce h-28   w-28 p-4" :src="heart" alt="background"></div>
 
-                <div class="flex flex-row mt-4 items-center">
+                <div class="flex flex-row  items-center">
                     <img class="w-32 md:w-44  rounded-full" :src="hasband" alt="background">
                     <p class="pl-4 text-xl font-moulpali text-pink-500 text-center">សិម ឆាយងួន</p>
                 </div>
