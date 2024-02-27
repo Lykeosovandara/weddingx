@@ -33,8 +33,8 @@
                 </strong></p>
             </a>
 
-            <a href="https://www.google.com/maps" class=" bg-white py-4 mt-4  p-40 rounded-lg flex flex-row ">
-                <img :src="map" alt="map image"  class="h-6 mr-1"> <p class=" font-light">GOOGLE MAP</p>
+            <a href="https://www.google.com/maps" class=" bg-white py-4 mt-4  p-40 rounded-lg flex flex-row  opacity-80">
+                <img :src="map" alt="map image"  class="h-6 mr-1"> <p class=" font-light font-serif">GOOGLE MAP</p>
             </a>
 
         </div>
@@ -46,6 +46,5 @@
 <script setup lang="ts">
 import backgroundUrl from '~/assets/images/1.1.jpg'
 import map from '~/assets/images/google-maps.png'
-import locationSvg from '~/assets/svg/location.svg'
 </script>
 
