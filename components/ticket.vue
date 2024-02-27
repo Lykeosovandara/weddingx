@@ -24,18 +24,14 @@
                 </div>
 
             </div>
-
-
             <p class="text-md  px-4 text-center text-gray-500">និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ <p class=" font-bold">ថ្ងៃអាទ្យិត ទី០៤ ខែកុម្ភៈ ឆ្នាំ២០២៤</p> ត្រូវនឹងថ្ងៃ ១០រោច ខែបុស្ស ឆ្នាំថោះ បញ្ចស័ក ព.ស ២៥៦៧ វេលាម៉ោង ០៥:០០ នាទីល្ងាច នៅគេហដ្ឋានខាងស្រី ស្ថិតនៅភូមិក្រសាំងជ័យ ឃុំបារាយណ៍ ស្រុកបារាយណ៍ ខេត្តកំពង់ធំ ដោយមេត្រីភាព។ សូមអរគុណ! </p>
     </div>
 </template>
 
 <script setup lang="ts">
-import backgroundUrl from '~/assets/images/1.1.jpg'
 import wire from '~/assets/images/1.2.jpg'
 import hasband from '~/assets/images/1.3.jpg'
 import heart from '~/assets/images/heart.png'
-import locationSvg from '~/assets/svg/location.svg'
 </script>
 
 

@@ -49,7 +49,6 @@ const items = [
 
 ]
 
-
 import backgroundUrl from '~/assets/images/1.1.jpg'
 import wire from '~/assets/images/1.2.jpg'
 import hasband from '~/assets/images/1.3.jpg'
