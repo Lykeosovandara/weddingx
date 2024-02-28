@@ -41,18 +41,13 @@ const items = [
         title: 'រូបភាពទី៣',
         image: hasband
     },
-    {
-        id: 4,
-        title: 'រូបភាពទី៤',
-        image: py
-    }
+    
 
 ]
 
 import backgroundUrl from '~/assets/images/1.1.jpg'
 import wire from '~/assets/images/1.2.jpg'
 import hasband from '~/assets/images/1.3.jpg'
-import py from '~/assets/images/py.jpg'
 </script>
 
 

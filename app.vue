@@ -18,22 +18,22 @@ function createHeart(): void {
   heart.classList.add('heart');
   heart.classList.add('opacity-75');
 
-  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.left = Math.random() * 90 + "vw";
   heart.style.animationDuration = Math.random() * 2 + 3 + "s";
 
-  heart.innerText = '💗';
+  heart.innerText = '🩷';
 
   document.body.appendChild(heart);
 
   setTimeout(() => {
     heart.remove();
-  }, 5000);
+  }, 2500);
 
 
 
 }
 onMounted(() => {
-  inter = setInterval(createHeart, 300);
+  inter = setInterval(createHeart, 400);
 
   setTimeout(() => {
     clearInterval(inter);

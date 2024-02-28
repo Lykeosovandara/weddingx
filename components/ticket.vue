@@ -12,7 +12,7 @@
             <div class="flex flex-col md:flex-row p-4">
                 
                 <div class="flex flex-row items-center">
-                    <p class="text-xl font-moulpali text-pink-500 pr-4 text-center">សេង ចាន់ធីតា</p>
+                    <p class="text-xl font-moulpali text-pink-500 pr-4 text-center">{{ data?.wife  }}</p>
                     <img class="w-32 md:w-44  rounded-full" :src="wire" alt="background">
                 </div>
                 
@@ -20,7 +20,7 @@
 
                 <div class="flex flex-row  items-center">
                     <img class="w-32 md:w-44  rounded-full" :src="hasband" alt="background">
-                    <p class="pl-4 text-xl font-moulpali text-pink-500 text-center">សិម ឆាយងួន</p>
+                    <p class="pl-4 text-xl font-moulpali text-pink-500 text-center">{{ data?.husband }}</p>
                 </div>
 
             </div>
@@ -32,6 +32,9 @@
 import wire from '~/assets/images/1.2.jpg'
 import hasband from '~/assets/images/1.3.jpg'
 import heart from '~/assets/images/heart.png'
+const { data } = await useFetch('/api/config')
+
+
 </script>
 
 
