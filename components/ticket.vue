@@ -1,8 +1,8 @@
 <template>
-    <div class="relative w-full bg-rose-gold flex flex-col bg-cover items-center py-4  ">
-        <p class="text-2xl text-pink-500 font-moulpali text-center">សិរីសួស្តីមង្គលអាពាហ៍ពិពាហ៍</p>
-        <p class="text-xl py-4 text-center ">យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</p>
-        <p class="text-md   px-4 text-center text-gray-400">ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា
+    <div class="relative w-full bg-rose-gold flex flex-col bg-cover items-center py-8  ">
+        <p class="text-xl text-pink-500 font-moulpali text-center">សិរីសួស្តីមង្គលអាពាហ៍ពិពាហ៍</p>
+        <p class="text-md py-4 text-center ">យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</p>
+        <p class="text-sm   px-4 text-center text-gray-400">ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា
             និងប្រិយមិត្ត
             អញ្ជើញចូលរួមជាអធិបតី
             និងជាភ្ញៀវកិត្តិយស
@@ -26,8 +26,9 @@
             </div>
 
         </div>
-        <p class="text-md  px-4 text-center text-gray-500">និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ
-        <p class=" font-bold">ថ្ងៃអាទ្យិត ទី០៤ ខែកុម្ភៈ ឆ្នាំ២០២៤</p> ត្រូវនឹងថ្ងៃ ១០រោច ខែបុស្ស ឆ្នាំថោះ បញ្ចស័ក ព.ស
+        
+        <p class="text-sm  px-4 text-center text-gray-500">និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ
+        <p class=" text-sm font-bold">ថ្ងៃអាទ្យិត ទី០៤ ខែកុម្ភៈ ឆ្នាំ២០២៤</p> ត្រូវនឹងថ្ងៃ ១០រោច ខែបុស្ស ឆ្នាំថោះ បញ្ចស័ក ព.ស
         ២៥៦៧ វេលាម៉ោង ០៥:០០ នាទីល្ងាច នៅគេហដ្ឋានខាងស្រី ស្ថិតនៅភូមិក្រសាំងជ័យ ឃុំបារាយណ៍ ស្រុកបារាយណ៍ ខេត្តកំពង់ធំ
         ដោយមេត្រីភាព។ សូមអរគុណ! </p>
     </div>
