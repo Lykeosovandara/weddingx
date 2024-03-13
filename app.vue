@@ -33,11 +33,11 @@ function createHeart(): void {
 
 }
 onMounted(() => {
-  inter = setInterval(createHeart, 400);
+  // inter = setInterval(createHeart, 400);
 
-  setTimeout(() => {
-    clearInterval(inter);
-  }, 30000);
+  // setTimeout(() => {
+  //   clearInterval(inter);
+  // }, 30000);
 });
 
 onUnmounted(() => {

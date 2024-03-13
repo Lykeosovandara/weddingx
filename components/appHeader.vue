@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-full bg-rose-gold flex h-screen  bg-cover" :style="{ backgroundImage: `url(${backgroundUrl})` }">
+    <div class="relative w-full bg-rose-gold flex h-screen  bg-cover hide-mobile hide-desktop">
         <div class=" bg-cover flex flex-col p-8 z-10">
 
             <div class="flex flex-col text-center">
@@ -12,7 +12,7 @@
 
         <div class=" absolute flex justify-center items-center  w-full h-full">
             <p
-                class="font-moulpali p-4 text-center text-6xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.orange.100),theme(colors.yellow.400),theme(colors.yellow.100),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">
+                class="font-moulpali p-4 text-center text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.orange.100),theme(colors.yellow.400),theme(colors.yellow.100),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">
                 {{ data?.title }}</p>
         </div>
         <div class="z-10 absolute flex flex-col justify-end items-center  w-full h-full  pb-6">
@@ -25,13 +25,14 @@
 
             </p>
 
-            <a href="https://www.google.com/maps">
+            <a :href="data.map">
                 <p class="text-sm md:text-xl text-white text-center font-moulpali px-4 ">{{ data?.address }}</p>
             </a>
 
-            <a href="https://www.google.com/maps" class=" bg-white py-4 mt-4  p-40 rounded-lg flex flex-row  opacity-80">
+            <a :href="data.map"
+                class=" bg-white py-4  mt-4  justify-center items-center rounded-lg flex flex-row  opacity-80 w-2/3 ">
                 <img :src="map" alt="map image" class="h-6 mr-1">
-                <p class=" font-light font-serif">GOOGLE MAP</p>
+                <p class=" font-light font-serif text-sm ">GOOGLE MAP</p>
             </a>
 
         </div>
@@ -41,6 +42,7 @@
 </template>
 
 <script setup lang="ts">
+import backgroundUrlMobile from '~/assets/images/1.jpeg'
 import backgroundUrl from '~/assets/images/1.1.jpg'
 import map from '~/assets/images/google-maps.png'
 const { data } = await useFetch('/api/config')
@@ -50,3 +52,17 @@ const { data } = await useFetch('/api/config')
 
 </script>
 
+
+<style scoped>
+.hide-mobile {
+    @media (max-width: 820px) {
+        background-image: url('~/assets/images/1.jpeg')
+    }
+}
+
+.hide-desktop {
+    @media (min-width: 820px) {
+        background-image: url('~/assets/images/1.1.jpg');
+    }
+}
+</style>
