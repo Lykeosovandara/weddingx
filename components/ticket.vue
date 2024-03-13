@@ -14,14 +14,14 @@
 
             <div class="flex flex-row items-center">
                 <p class="text-xl font-moulpali text-pink-500 pr-4 text-center">{{ data?.husband }}</p>
-                <img class="w-32 md:w-44  rounded-full" :src="wire" alt="background">
+                <img class="w-44 md:w-44  rounded-full" :src="wire" alt="background">
             </div>
 
-            <div class="flex items-center justify-center"><img class="animate-bounce h-28  w-28 p-4" :src="heart"
+            <div class="flex items-center justify-center"><img class="animate-bounce h-16  w-16 my-8" :src="heart"
                     alt="background"></div>
 
             <div class="flex flex-row  items-center">
-                <img class="w-32 md:w-44  rounded-full" :src="hasband" alt="background">
+                <img class="w-44 md:w-44  rounded-full" :src="hasband" alt="background">
                 <p class="pl-4 text-xl font-moulpali text-pink-400 text-center">{{ data?.wife }}</p>
             </div>
 
