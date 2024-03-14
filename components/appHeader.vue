@@ -2,16 +2,25 @@
     <div class="relative w-full bg-rose-gold flex h-screen  bg-cover hide-mobile hide-desktop">
         <div class=" bg-cover flex flex-col p-8 z-10">
 
-            <div class="flex flex-col text-center">
-                <p class="text-4xl font-moulpali text-rose-gold">{{ info?.marriedDate }}</p>
-                <p class="text-md pt-4 text-gray-100 font-moulpali">សិរីមង្គលអាពាហ៍ពិពាហ៍</p>
-            </div>
+            <p
+                class="font-moulpali text-center text-4xl md:text-6xl font-extrabold bg-clip-text  text-white">
+                {{ info?.title }}</p>
+            <!-- <p
+                class="font-moulpali text-center text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.orange.100),theme(colors.yellow.400),theme(colors.yellow.100),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">
+                {{ info?.title }}</p> -->
         </div>
 
-        <div class=" absolute flex justify-center items-center  w-full h-full">
-            <p
-                class="font-moulpali p-4 text-center text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.orange.100),theme(colors.yellow.400),theme(colors.yellow.100),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">
-                {{ info?.title }}</p>
+        <div class=" absolute flex flex-col justify-center items-center  w-full h-full">
+
+
+            <div class="flex flex-col text-center">
+                <p class="text-4xl px-2 font-kantumruy bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.orange.100),theme(colors.yellow.400),theme(colors.yellow.100),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">{{ info?.marriedDate }}</p>
+                <!-- <p class="text-md pt-4 text-white font-moulpali ">សិរីមង្គលអាពាហ៍ពិពាហ៍</p> -->
+                <p
+                class="font-moulpali text-center text-md pt-4 font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.orange.100),theme(colors.yellow.400),theme(colors.yellow.100),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">
+                សិរីមង្គលអាពាហ៍ពិពាហ៍</p>
+
+            </div>
         </div>
         <div class="z-10  absolute flex flex-col justify-end items-center  w-full h-full  pb-6">
             <p>
@@ -24,7 +33,7 @@
             </p>
 
             <a :href="info.map">
-                <p class="text-sm md:text-xl text-white text-center font-moulpali px-4 ">{{ info?.address }}</p>
+                <p class="text-sm md:text-xl text-white text-center font-kantumruy px-4 ">{{ info?.address }}</p>
             </a>
 
             <button @click="info.show = true"

@@ -1,8 +1,8 @@
 <template>
     <div class="relative w-full bg-rose-gold flex flex-col bg-cover items-center py-8  ">
         <p class="text-xl text-pink-500 font-moulpali text-center">សិរីសួស្តីមង្គលអាពាហ៍ពិពាហ៍</p>
-        <p class="text-md py-4 text-center ">យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</p>
-        <p class="text-sm   px-4 text-center text-gray-400">ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា
+        <p class="text-md py-4 text-center font-kantumruy ">យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</p>
+        <p class="text-sm   px-4 text-center text-gray-400 font-kantumruy">ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា
             និងប្រិយមិត្ត
             អញ្ជើញចូលរួមជាអធិបតី
             និងជាភ្ញៀវកិត្តិយស
@@ -27,8 +27,8 @@
 
         </div>
         
-        <p class="text-sm  px-4 text-center text-gray-500">និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ
-        <p class=" text-sm font-bold">{{ info.khmerDate }}</p> ត្រូវនឹង{{ info.buddaDate }} វេលាម៉ោង ០៥:០០ នាទីល្ងាច {{ info.address }}
+        <p class="text-sm  px-4 text-center text-gray-500 font-kantumruy">និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ
+        <p class=" text-sm font-bold font-kantumruy">{{ info.khmerDate }}</p> ត្រូវនឹង{{ info.buddaDate }} វេលាម៉ោង ០៥:០០ នាទីល្ងាច {{ info.address }}
         ដោយមេត្រីភាព។ សូមអរគុណ! </p>
     </div>
 </template>
