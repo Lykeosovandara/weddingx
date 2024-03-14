@@ -8,7 +8,7 @@
         <div class="grid grid-cols-3 gap-2 p-4">
             <NuxtImg v-for="item in items"
                 class=" bg-cover rounded-lg inset-10 border-gray border-2 border-opacity-5 h-full" :class="item.spac"
-                :src="item.img" @click="() => openImage(item.id)" densities="x1 x2" />
+                :src="item.img" @click="() => openImage(item.id)"  />
         </div>
         <full-view v-if="showImageDetail" :image="selectedImage" :show="showImageDetail" @close="closeImage" />
 
@@ -38,6 +38,7 @@ const items = [
         title: 'រូបភាពទី៥',
         spac: 'col-span-1',
         img: '/gallary/5.jpeg'
+
     },
 
     {
