@@ -21,12 +21,10 @@ const showImageDetail = ref<boolean>(false)
 const selectedImage = ref<string>(null)
 
 const closeImage = () => {
-
     showImageDetail.value = false
 }
 
 const openImage = (img) => {
-
     showImageDetail.value = true
     selectedImage.value = "/gallary/" + img + ".jpeg";
 }
