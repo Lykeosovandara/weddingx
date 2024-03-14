@@ -6,8 +6,6 @@
                 <p class="text-4xl font-moulpali text-rose-gold">{{ info?.marriedDate }}</p>
                 <p class="text-md pt-4 text-gray-100 font-moulpali">សិរីមង្គលអាពាហ៍ពិពាហ៍</p>
             </div>
-
-
         </div>
 
         <div class=" absolute flex justify-center items-center  w-full h-full">
@@ -15,7 +13,7 @@
                 class="font-moulpali p-4 text-center text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.orange.100),theme(colors.yellow.400),theme(colors.yellow.100),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">
                 {{ info?.title }}</p>
         </div>
-        <div class="z-10 absolute flex flex-col justify-end items-center  w-full h-full  pb-6">
+        <div class="z-10  absolute flex flex-col justify-end items-center  w-full h-full  pb-6">
             <p>
                 <svg class="w-5 h-5 fill-white mr-2 mb-2" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
                     width="800" height="800" viewBox="0 0 395.71 395.71">
@@ -29,28 +27,33 @@
                 <p class="text-sm md:text-xl text-white text-center font-moulpali px-4 ">{{ info?.address }}</p>
             </a>
 
-            <a :href="info.map"
-                class=" bg-white py-4  mt-4  justify-center items-center rounded-lg flex flex-row  opacity-80 w-2/3 ">
-                <img :src="map" alt="map image" class="h-6 mr-1">
-                <p class=" font-light font-serif text-sm ">GOOGLE MAP</p>
-            </a>
+            <button @click="info.show = true"
+                class=" bg-gray-500 py-4  mt-4  justify-center items-center rounded-lg flex flex-row  opacity-80 w-2/3  border-white border-2">
+                <!-- <img :src="map" alt="map image" class="h-6 mr-1"> -->
+                <p class="font-serif text-md  text-white font-bold ">INVITATION</p>
+            </button>
 
         </div>
 
         <div class=" absolute w-full h-full bg-black opacity-20"></div>
+        <full-view :image="invited" :show="info.show" @close="info.show = false" />
     </div>
 </template>
 
 <script setup lang="ts">
+import invited from "~/assets/images/invited.jpg";
 import backgroundUrlMobile from '~/assets/images/1.jpeg'
 import backgroundUrl from '~/assets/images/1.1.jpg'
 import map from '~/assets/images/google-maps.png'
+
+
 
 const info = ref({
     title: '',
     marriedDate: '',
     address: '',
-    map: ''
+    map: '',
+    show: false
 })
 
 const { data: sheet } = await allRows();

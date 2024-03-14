@@ -1,46 +1,32 @@
 <template>
     <div class="relative w-full bg-white flex flex-col bg-cover items-center py-8  ">
-        <p class="text-2xl text-pink-500 font-moulpali text-center">កម្រងរូបភាពអនុស្សាវរីយ៍</p>
-        <p class="text-md p-4 text-center text-gray-500">រូបភាពសម្រាប់រំលឹក និងជាចំណងអាពាហ៍ពិពាហ៍ដ៏រឹងមាំ ហើយមានសុភមង្គល
+        <p class="text-xl text-pink-500 font-moulpali text-center">កម្រងរូបភាពអនុស្សាវរីយ៍</p>
+        <p class="text-sm p-4 text-center text-gray-500">រូបភាពសម្រាប់រំលឹក និងជាចំណងអាពាហ៍ពិពាហ៍ដ៏រឹងមាំ ហើយមានសុភមង្គល
             សម្រាប់យើងទាំងពីរនាក់។</p>
 
-        <div class="columns-1 gap-4 py-4 md:columns-2 p-4 space-y-4">
-            <div v-for="item in items">
-                <div class="relative" >
-                    <img class="w-full  object-cover rounded-lg inset-10" :src="item.img ? item.img : wire"
-                        :alt="item.title" >
-                    <div class="bg-black bg-opacity-20 p-4 rounded-lg absolute w-full h-full inset-0">
 
-                    </div>
-                    <div class="absolute inset-0  items-center justify-center h-full bottom-0" @click="() => openImage(item)">
-                        <div class=" p-4 rounded-lg">
-                            <p class="text-white text-lg font-semibold">{{ item.title }}</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="columns-1 md:columns-2 p-4 space-y-3 pointer-events-auto">
+            <img v-for="item in items" class="w-full object-cover rounded-lg inset-10 border-gray border-2 border-opacity-10" :src="item.img ? item.img : wire"
+                        :alt="item.title" @click="() =>openImage(item.img)">
         </div>
-        <!-- <ImageDetail :show="showImageDetail" :image="selectedImage" @close="closeImage"></ImageDetail> -->
+       
     </div>
 </template>
 
 <script setup lang="ts">
 
-
 const showImageDetail = ref<boolean>(false)
 const selectedImage = ref<string>(null)
 
 const closeImage = () => {
-    showImageDetail.value = false
+    showImageDetail.value = true
     selectedImage.value = null
 }
 
-const openImage = (img: {
-    id: number;
-    title: string;
-    img: string;
-})=> {
+const openImage = (img)=> {
+    console.log("OPEN IMAGE", img);
+    window.open(img);
+    
     showImageDetail.value = false
     selectedImage.value = null
 }

@@ -28,8 +28,7 @@
         </div>
         
         <p class="text-sm  px-4 text-center text-gray-500">និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ
-        <p class=" text-sm font-bold">{{ info.khmerDate }}</p> ត្រូវនឹងថ្ងៃ ១០រោច ខែបុស្ស ឆ្នាំថោះ បញ្ចស័ក ព.ស
-        ២៥៦៧ វេលាម៉ោង ០៥:០០ នាទីល្ងាច នៅគេហដ្ឋានខាងស្រី ស្ថិតនៅភូមិក្រសាំងជ័យ ឃុំបារាយណ៍ ស្រុកបារាយណ៍ ខេត្តកំពង់ធំ
+        <p class=" text-sm font-bold">{{ info.khmerDate }}</p> ត្រូវនឹង{{ info.buddaDate }} វេលាម៉ោង ០៥:០០ នាទីល្ងាច {{ info.address }}
         ដោយមេត្រីភាព។ សូមអរគុណ! </p>
     </div>
 </template>
@@ -43,6 +42,8 @@ const info = ref({
     husband: '',
     wife: '',
     khmerDate: '',
+    buddaDate: '',
+    address: ''
 })
 
 const { data: sheet } = await allRows();
@@ -52,6 +53,8 @@ onMounted(() => {
     info.value.husband = sheet.value.values[3][1];
     info.value.wife = sheet.value.values[4][1];
     info.value.khmerDate = sheet.value.values[6][1];
+    info.value.buddaDate = sheet.value.values[7][1];
+    info.value.address = sheet.value.values[2][1];
 })
 
 

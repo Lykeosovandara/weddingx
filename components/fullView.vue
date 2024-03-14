@@ -1,23 +1,27 @@
 <template>
-    <div v-if="show" class="image-detail">
-        <img :src="image.img" :alt="image.title">
-        <button @click="close">Close</button>
-    </div>
+    <transition name="fade">
+        <div v-if="show" class="image-detail z-20" @click="close">
+            <div class="flex flex-col items-center">
+
+                <img :src="image" class="rounded-lg border-2">
+                <button @click="() => close()" class="text-white py-2 px-4 bg-black mt-2 rounded-lg">Close</button>
+
+            </div>
+
+        </div>
+    </transition>
 </template>
 
 
 <script lang="ts" setup>
+const emit = defineEmits(['close']);
 defineProps<{
     show: boolean;
-    image: {
-        id: number;
-        title: string;
-        img: string;
-    };
+    image: string;
 }>();
 
 const close = () => {
-    emit('update:show', false);
+    emit('close',);
 };
 </script>
 
@@ -28,14 +32,28 @@ const close = () => {
     left: 0;
     width: 100%;
     height: 100%;
+    inset: -1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .image-detail img {
     max-width: 90%;
     max-height: 90%;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to
+
+/* .fade-leave-active below version 2.1.8 */
+    {
+    opacity: 0;
 }
 </style>
