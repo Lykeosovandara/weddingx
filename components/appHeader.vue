@@ -28,20 +28,19 @@
             </a>
 
             <button @click="info.show = true"
-                class=" bg-gray-500 py-4  mt-4  justify-center items-center rounded-lg flex flex-row  opacity-80 w-2/3  border-white border-2">
+                class=" bg-gray-500 py-2  mt-4  justify-center items-center rounded-lg flex flex-row  opacity-80 w-2/3  border-white border-2">
                 <!-- <img :src="map" alt="map image" class="h-6 mr-1"> -->
-                <p class="font-serif text-md  text-white font-bold ">INVITATION</p>
+                <p class="font-serif text-sm  text-white font-bold ">INVITATION</p>
             </button>
 
         </div>
 
         <div class=" absolute w-full h-full bg-black opacity-20"></div>
-        <full-view :image="invited" :show="info.show" @close="info.show = false" />
+        <full-view image="/invited.jpg" :show="info.show" @close="info.show = false" />
     </div>
 </template>
 
 <script setup lang="ts">
-import invited from "~/assets/images/invited.jpg";
 import backgroundUrlMobile from '~/assets/images/1.jpeg'
 import backgroundUrl from '~/assets/images/1.1.jpg'
 import map from '~/assets/images/google-maps.png'

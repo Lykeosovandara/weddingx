@@ -6,7 +6,7 @@ export default defineNuxtConfig({
         SPREAD_SHEET_ID: process.env.SPREAD_SHEET_ID
     }
   },
-  modules: ['@nuxtjs/google-fonts'],
+  modules: ['@nuxtjs/google-fonts',  '@nuxt/image',],
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   postcss: {

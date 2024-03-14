@@ -37,7 +37,7 @@ onMounted(() => {
 
   // setTimeout(() => {
   //   clearInterval(inter);
-  // }, 30000);
+  // }, 1000);
 });
 
 onUnmounted(() => {

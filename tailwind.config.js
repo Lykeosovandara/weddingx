@@ -11,6 +11,7 @@ export default {
   theme: {
     fontFamily: {
       moulpali: ["Moulpali", "sans-serif"],
+      kantumruy: ["Kantumruy+Pro", "sans-serif"],
     },
     extend: {
       colors: {
