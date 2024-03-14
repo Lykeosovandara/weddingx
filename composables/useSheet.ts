@@ -11,8 +11,7 @@ const getVars = () => {
 export async function allRows() {
     const { SPREAD_SHEET_ID, GOOGLE_API_KEY } = getVars();
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${SPREAD_SHEET_ID}/values/${sheetRange}?key=${GOOGLE_API_KEY}`
-    console.log(url);
-    
+
     return await useFetch(url)
 }
 
@@ -25,8 +24,3 @@ export async function singleRow(row) {
     return await useFetch(url)
 }
 
-export const useFoo = () => {
-    console.log('useFoo');
-    
-    return useState('foo', () => 'bar')
-  }

@@ -5,11 +5,16 @@
             សម្រាប់យើងទាំងពីរនាក់។</p>
 
 
-        <div class="columns-1 md:columns-2 p-4 space-y-3 pointer-events-auto">
-            <img v-for="item in items" class="w-full object-cover rounded-lg inset-10 border-gray border-2 border-opacity-10" :src="item.img ? item.img : wire"
-                        :alt="item.title" @click="() =>openImage(item.img)">
+        <div class="grid grid-cols-3 gap-2 p-4">
+            <img v-for="item in items"
+                class="w-full object-cover rounded-lg inset-10 border-gray border-2 border-opacity-10 h-full"
+                :class="item.spac"
+                :src="item.img ? item.img : wire" :alt="item.title"
+                @click="() => openImage(item.img)">
         </div>
-       
+
+        <full-view :image="selectedImage" :show="showImageDetail" @close="closeImage" />
+
     </div>
 </template>
 
@@ -19,61 +24,63 @@ const showImageDetail = ref<boolean>(false)
 const selectedImage = ref<string>(null)
 
 const closeImage = () => {
-    showImageDetail.value = true
-    selectedImage.value = null
-}
-
-const openImage = (img)=> {
-    console.log("OPEN IMAGE", img);
-    window.open(img);
-    
     showImageDetail.value = false
     selectedImage.value = null
 }
 
+const openImage = (img) => {
+
+    showImageDetail.value = true
+    selectedImage.value = img
+}
+
 
 const items = [
+
     {
-        id: 1,
-        title: 'រូបភាពទី១',
-        img: g1
+        id: 5,
+        title: 'រូបភាពទី៥',
+        img: g5,
+        spac: 'col-span-1'
+    },
+
+    {
+        id: 4,
+        title: 'រូបភាពទី៤',
+        img: g4,
+        spac: 'col-span-2'
     },
     {
         id: 2,
         title: 'រូបភាពទី២',
-        img: g2
+        img: g2,
+        spac: 'col-span-1'
     },
     {
         id: 3,
         title: 'រូបភាពទី៣',
-        img: g3
-    },
-    {
-        id: 4,
-        title: 'រូបភាពទី៤',
-        img: g4
-    },
-    {
-        id: 5,
-        title: 'រូបភាពទី៥',
-        img: g5
-    },
-    {
-        id: 6,
-        title: 'រូបភាពទី៦',
-        img: g6
-    },
-    {
-        id: 7,
-        title: 'រូបភាពទី៧',
-        img: g7
+        img: g3,
+        spac: 'col-span-1'
     },
     {
         id: 8,
         title: 'រូបភាពទី៨',
-        img: g8
+        img: g8,
+        spac: 'col-span-1'
     },
 
+    {
+        id: 7,
+        title: 'រូបភាពទី៧',
+        img: g7,
+        spac: 'col-span-1'
+    },
+    {
+        id: 6,
+        title: 'រូបភាពទី៦',
+        img: g6,
+        spac: 'col-span-2'
+    },
 
 ]
 
