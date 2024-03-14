@@ -7,7 +7,7 @@
 
         <div class="grid grid-cols-3 gap-2 p-4">
             <NuxtImg v-for="item in items"
-                class="rounded-lg inset-10 border-gray border-2 border-opacity-5 h-full" :class="item.spac"
+                class="rounded-lg inset-10 border-gray border-2 border-opacity-5 " :class="item.spac"
                 :src="item.img" @click="() => openImage(item.id)" quality="50" />
         </div>
         <full-view v-if="showImageDetail" :image="selectedImage" :show="showImageDetail" @close="closeImage" />
