@@ -3,6 +3,7 @@
     <app-header></app-header>
     <ticket></ticket>
     <photo-views></photo-views>
+    <maps></maps>
     <app-footer></app-footer>
   </div>
 </template>
