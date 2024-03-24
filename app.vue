@@ -1,7 +1,9 @@
 <template>
-  <div class="w-full h-screen containera ">
-    <app-header></app-header>
+  <div class="w-full h-screen container ">
+    <address-app></address-app>
+    <!-- <app-header></app-header> -->
     <ticket></ticket>
+
     <photo-views></photo-views>
     <maps></maps>
     <app-footer></app-footer>

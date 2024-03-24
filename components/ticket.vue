@@ -34,8 +34,8 @@
 </template>
 
 <script setup lang="ts">
-import wire from '~/assets/images/1.2.jpg'
-import hasband from '~/assets/images/1.3.jpg'
+import wire from '~/assets/images/hushband.jpg'
+import hasband from '~/assets/images/wife.jpg'
 import heart from '~/assets/images/heart.png'
 
 const info = ref({
