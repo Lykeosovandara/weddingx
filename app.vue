@@ -6,6 +6,7 @@
 
     <photo-views></photo-views>
     <maps></maps>
+    <aba></aba>
     <app-footer></app-footer>
   </div>
 </template>
