@@ -5,10 +5,9 @@ on:
   # Runs on pushes to any branch
   push:
     branches:
+      - main
       - chealing_hak
-      # Add more branches as needed, or use pattern matching:
-      # - 'feature/**'
-      # - 'release/**'
+      - '**'  # Allow all branches
   
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
