@@ -4,8 +4,7 @@
     <p class="text-sm   px-4 text-center text-gray-400 font-kantumruy py-4">{{ info.address }}</p>
     <div class="h-1/2 rounded-lg">
       <iframe style="border-radius: 10px;" loading="lazy" allowfullscreen class=" w-full h-full rounded-lg"
-        title="map" aria-hidden="false" tabindex="0" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDIKCYO_jZB8-MZIhV4owOBDdG_rl8Xd6M
-    &q=11.6448440,104.9566970">
+        title="map" aria-hidden="false" tabindex="0" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=11.487233,104.810767&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
       </iframe>
     </div>
   </div>
