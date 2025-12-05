@@ -32,52 +32,46 @@ const openImage = (img) => {
 
 const items = [
     {
-        id: 5,
-        title: 'រូបភាពទី៥',
-        spac: 'col-span-1',
-        img: '/gallary/5.jpeg'
-
-    },
-
-    {
         id: 4,
         title: 'រូបភាពទី៤',
         spac: 'col-span-2',
-        img: '/gallary/4.jpeg'
+        img: '/gallary/4.jpg'
     },
     {
         id: 2,
         title: 'រូបភាពទី២',
         spac: 'col-span-1',
-        img: '/gallary/2.jpeg'
+        img: '/gallary/2.jpg'
+    },
+      {
+        id: 6,
+        title: 'រូបភាពទី៦',
+        spac: 'col-span-1',
+        img: '/gallary/6.jpg'
     },
     {
         id: 3,
         title: 'រូបភាពទី៣',
-        spac: 'col-span-1',
-        img: '/gallary/3.jpeg'
+        spac: 'col-span-2',
+        img: '/gallary/3.jpg'
     },
-    {
-        id: 8,
-        title: 'រូបភាពទី៨',
-        spac: 'col-span-1',
-        img: '/gallary/8.jpeg'
-    },
-
+   
+   
     {
         id: 7,
         title: 'រូបភាពទី៧',
         spac: 'col-span-1',
-        img: '/gallary/7.jpeg'
+        img: '/gallary/7.jpg'
     },
-    {
-        id: 6,
-        title: 'រូបភាពទី៦',
+   
+     {
+        id: 5,
+        title: 'រូបភាពទី៥',
         spac: 'col-span-2',
-        img: '/gallary/6.jpeg'
+        img: '/gallary/5.jpg'
+
     },
 
 ]
-
 
 </script>

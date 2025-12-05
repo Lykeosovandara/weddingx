@@ -9,11 +9,9 @@
   </div>
 </template>
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+import { onMounted, onUnmounted } from 'vue';
 
 let inter: any = null;
-
-
 
 function createHeart(): void {
   const heart: HTMLDivElement = document.createElement('div');
