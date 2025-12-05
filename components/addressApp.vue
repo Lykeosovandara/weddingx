@@ -1,27 +1,14 @@
 <template>
    <div class="bg-rose-gold ">
-    <Carousel class="carousel" :perPage="1" navigationEnabled paginationEnabled>
-        <Slide v-for="(image, index) in images" :key="index" class=" z-1">
-
-            <img class="h-full bg-cover full-width" :src="image" alt="Slide image" />
-            <!-- <Pagination class="pagination z-10" /> -->
-
-          
-        </Slide>
-        <template #addons>
-                <Pagination />
-            </template>
-    </Carousel>
-   </div>
+    <img class="h-full bg-cover full-width" :src="bg1" alt="Slide image" />
+    <img class="h-full bg-cover full-width" :src="bg2" alt="Slide image" />
+       </div>
 </template>
 
 <script setup lang="ts">
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
 import bg1 from '~/assets/images/1.png';
-import bg2 from '~/assets/images/1-2.jpg';
-import bg3 from '~/assets/images/1-3.jpg';
+import bg2 from '~/assets/images/111.png';
 
-const images = ref([bg1, bg2, bg3]);
 </script>
 
 <style scoped>
@@ -34,6 +21,5 @@ const images = ref([bg1, bg2, bg3]);
 .full-width {
     width: 100%;
 }
-
 
 </style>

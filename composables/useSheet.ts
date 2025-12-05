@@ -1,5 +1,5 @@
 
-let sheetRange = "Sheet1!A1:D200";
+let sheetRange = "Sheet2!A1:D200";
 
 const getVars = () => {
     const SPREAD_SHEET_ID = useRuntimeConfig().public.SPREAD_SHEET_ID;
@@ -18,7 +18,7 @@ export async function allRows() {
 export async function singleRow(row) {
     const { SPREAD_SHEET_ID, GOOGLE_API_KEY } = getVars();
 
-    const rowRange = `Sheet1!A${row}:D${row}`
+    const rowRange = `Sheet2!A${row}:D${row}`
 
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${SPREAD_SHEET_ID}/values/${rowRange}?key=${GOOGLE_API_KEY}`
     return await useFetch(url)

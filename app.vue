@@ -1,9 +1,7 @@
 <template>
   <div class="w-full h-screen container ">
     <address-app></address-app>
-    <!-- <app-header></app-header> -->
     <ticket></ticket>
-
     <photo-views></photo-views>
     <maps></maps>
     <aba></aba>
@@ -24,7 +22,6 @@ function createHeart(): void {
 
   heart.style.left = Math.random() * 90 + "vw";
   heart.style.animationDuration = Math.random() * 2 + 3 + "s";
-
   heart.innerText = '🩷';
 
   document.body.appendChild(heart);
@@ -33,15 +30,13 @@ function createHeart(): void {
     heart.remove();
   }, 2500);
 
-
-
 }
 onMounted(() => {
-  // inter = setInterval(createHeart, 400);
+  inter = setInterval(createHeart, 400);
 
-  // setTimeout(() => {
-  //   clearInterval(inter);
-  // }, 1000);
+  setTimeout(() => {
+    clearInterval(inter);
+  }, 1000);
 });
 
 onUnmounted(() => {
