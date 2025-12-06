@@ -29,7 +29,6 @@ const openImage = (img) => {
     selectedImage.value = "/gallary/" + img + ".jpeg";
 }
 
-
 const items = [
     {
         id: 4,
@@ -43,7 +42,7 @@ const items = [
         spac: 'col-span-1',
         img: '/gallary/2.jpg'
     },
-      {
+    {
         id: 6,
         title: 'រូបភាពទី៦',
         spac: 'col-span-1',
@@ -55,23 +54,61 @@ const items = [
         spac: 'col-span-2',
         img: '/gallary/3.jpg'
     },
-   
-   
     {
         id: 7,
         title: 'រូបភាពទី៧',
         spac: 'col-span-1',
         img: '/gallary/7.jpg'
     },
-   
-     {
+    {
         id: 5,
         title: 'រូបភាពទី៥',
         spac: 'col-span-2',
         img: '/gallary/5.jpg'
-
     },
-
+    {
+        id: 9,
+        title: 'រូបភាពទី៩',
+        spac: 'col-span-2',
+        img: '/gallary/9.jpg'
+    },
+    {
+        id: 15,
+        title: 'រូបភាពទី១៥',
+        spac: 'col-span-1',
+        img: '/gallary/15.jpg'
+    },
+    // {
+    //     id: 10,
+    //     title: 'រូបភាពទី១០',
+    //     spac: 'col-span-2',
+    //     img: '/gallary/10.jpg'
+    // },
+    // {
+    //     id: 11,
+    //     title: 'រូបភាពទី១១',
+    //     spac: 'col-span-2',
+    //     img: '/gallary/11.jpg'
+    // },
+    {
+        id: 12,
+        title: 'រូបភាពទី១២',
+        spac: 'col-span-1',
+        img: '/gallary/12.jpg'
+    },
+    // {
+    //     id: 13,
+    //     title: 'រូបភាពទី១៣',
+    //     spac: 'col-span-1',
+    //     img: '/gallary/13.jpg'
+    // },
+    {
+        id: 14,
+        title: 'រូបភាពទី១៤',
+        spac: 'col-span-2',
+        img: '/gallary/14.jpg'
+    },
+    
 ]
 
 </script>
