@@ -16,8 +16,7 @@
 
         <!-- Khmer Instructions -->
         <div class="instructions">
-            <p class="khmer-text">លោកអ្នកអាចធ្វើអំណោយតាមរយៈ: ABA</p>
-            <p class="khmer-text">សូមចុចលើ Button ខាងក្រោម</p>
+            <p class="khmer-text">លោកអ្នកក៏អាចផ្ញើចំណងដៃតាមរយៈ ABA របស់ពួកយើងទាំងពីរ ឬ ចុច Button ខាងក្រោម</p>
         </div>
 
         <!-- Account Info -->
